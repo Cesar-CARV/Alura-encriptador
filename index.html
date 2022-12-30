@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciptador de texto</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Encriptador de texto alura</h1>
+    </header>
+    <main class="app">
+        <!-- Input -->
+        <section id="section-input">
+            <div class="container">
+                <textarea class="textarea" id="input-textArea" cols="10" rows="10"
+                    placeholder="Ingrsea tu texto a encriptar"></textarea>
+            </div>
+            <span>[i]Solo minusculas</span>
+            <div class="container--center">
+                <button class="btn btn--primary" id="btn-encriptar">Encriptar</button>
+                <button class="btn" id="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <!-- Output -->
+        <section id="section-output">
+            <div class="container">
+                <textarea class="textarea" id="output-textArea" cols="10" rows="10" readonly
+                    placeholder="..."></textarea>
+            </div>
+            <span id="mesage-info">.</span>
+            <div class="container--center">
+                <button class="btn" id="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

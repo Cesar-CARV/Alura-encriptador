@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+    border-radius: 5px;
+}
+
+*:focus{
+    outline: none;
+}
+
+
+body{
+    height: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+.app{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+#section-input, #section-output{
+    flex-grow: 1;
+    min-width: 300px;
+    padding: 5px;
+    margin: 3px;
+    background: #ccc;
+}
+
+.container{
+    width: 100%;
+    margin: 3px auto;
+    padding: 5px;
+}
+
+.container--center{
+    width: 100%;
+    margin: 3px auto;
+    padding: 5px;
+    display: flex;
+}
+.container--center > .btn{
+    flex-grow: 1;
+}
+
+.textarea{
+    resize: none;
+    border: none;
+    padding: 10px;
+    width:  100%;
+    /* background-color: #444; */
+    color: #000;
+}
+
+.textarea::placeholder{
+    color: #999;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    /* border: solid 1px #000; */
+    /* box-shadow: -5px 5px 0px #000; */
+    background-color: #000;
+    color: #fff;
+    margin: 5px;
+}
+
+.btn:focus{
+    outline: solid 2px #555;
+}
+
+.btn--primary{
+    background-color: #1866a7;
+    color: #fff;
+    font-weight: bold;
+}
+
+span{
+    padding: 0px 10px;
+}
+
+#mesage-info{
+    color: #1866a7;
+}
